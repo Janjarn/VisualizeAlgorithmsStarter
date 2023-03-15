@@ -6,6 +6,8 @@ import visualizealgorithms.bll.algorithm.Sorting.BubbleSort;
 import visualizealgorithms.bll.algorithm.Sorting.DefaultSort;
 import visualizealgorithms.bll.algorithm.Sorting.MergeSort;
 import visualizealgorithms.bll.algorithm.Sorting.QuickSort;
+import visualizealgorithms.bll.algorithm.Sorting.InsertionSort;
+import visualizealgorithms.bll.algorithm.Sorting.SelectionSort;
 
 //Java imports
 import java.util.ArrayList;
@@ -24,8 +26,8 @@ public class AlgorithmLoader {
 
         //Add implemented/selected algorithms here..
         algorithms.add(new BubbleSort());
-
-
+        algorithms.add(new SelectionSort());
+        algorithms.add(new InsertionSort());
         algorithms.add(new QuickSort());
         algorithms.add(new MergeSort());
         algorithms.add(new DefaultSort());
