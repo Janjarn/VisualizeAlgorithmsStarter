@@ -11,6 +11,6 @@ public class SelectionSort extends GenericAlgorithm {
 
     @Override
     public void doWork() {
-        int[]b = (i)
+        //int[]b = (i)
     }
 }

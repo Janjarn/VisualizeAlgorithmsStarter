@@ -3,6 +3,9 @@ package visualizealgorithms;
 //Project imports
 import visualizealgorithms.bll.algorithm.IAlgorithm;
 import visualizealgorithms.bll.algorithm.Sorting.BubbleSort;
+import visualizealgorithms.bll.algorithm.Sorting.DefaultSort;
+import visualizealgorithms.bll.algorithm.Sorting.MergeSort;
+import visualizealgorithms.bll.algorithm.Sorting.QuickSort;
 
 //Java imports
 import java.util.ArrayList;
@@ -17,11 +20,15 @@ public class AlgorithmLoader {
 
     public AlgorithmLoader() {
         //Modify default inputs
-        inputs = "1000;2000;4000;8000;16000;32000;64000;";
+        inputs = "1000;2000;4000;8000;16000;32000;64000;128000;256000;";
 
         //Add implemented/selected algorithms here..
         algorithms.add(new BubbleSort());
 
+
+        algorithms.add(new QuickSort());
+        algorithms.add(new MergeSort());
+        algorithms.add(new DefaultSort());
         //more algorithms here :)
     }
 
