@@ -13,16 +13,20 @@ public class BubbleSort extends GenericAlgorithm {
     public void doWork() {
 
         // O(N^2)
-        int []b = (int[]) super.getData();
+        Comparable[] arr = (Comparable[]) super.getData();
+        //int []b = (int[]) super.getData();
 
-        for (int i = 1; i < b.length; i++) { // O(N)
-            for (int j = 0; j < b.length - i;
-                 j++)
-            {
-                if (b[j] > b[j + 1]) {
-                    int tmp = b[j];
-                    b[j] = b[j + 1];
-                    b[j + 1] = tmp;
+        int n = arr.length;
+        Comparable temp = 0;
+
+        for(int i=0; i < n; i++){
+            for(int j=1; j < (n-i); j++){
+
+                if(arr[j-1].compareTo(arr[j]) > 0){
+                    //swap the elements!
+                    temp = arr[j-1];
+                    arr[j-1] = arr[j];
+                    arr[j] = temp;
                 }
             }
         }
